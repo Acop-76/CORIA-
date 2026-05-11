@@ -60,18 +60,7 @@ submitted to high temperatures, International Journal of Heat and Mass Transfer 
 
 
 
-
-
-
-
 see attached picture: 1Dcalculation-geometrie.png
-
-
-
-
-
-
-
 
 
 
@@ -92,24 +81,32 @@ The one obtained by optimsation on ATG dataset.
 -Three reactions in parallel , corresponding of the three pseudo-components hemicellulose, cellulose and lignin.
 
 Optimised parameters : assumed to be constant
-
 heat capacity (K/kg/K): virgin-wood (cpv), char (cpc)
 thermal conductivity (W/m/K) : virgin-wood (kv), char (kc)
-emissivity : char emc 
-absorptivity : char abc
 convective coefficient at the top (w/m²) : hTop
 
 known parameters  for wood: from litterature
-emissivity : 0.75
-absorptivity : 0.9
-Rq : these values have a low influence on the 1D calculation results under 30kw/m2
+emissivity : 0.75 for virgin wood, 0.9 for char
+absorptivity : 0.9 for virgin wood, 0.9 for char
+Rq : the emissivity and absorptivity of virgin wood have a low influence on the 1D calculation results under 30kw/m2
 
 known parameters  for isolant: from litterature
- 840          -8.967E+05      0.05         0.05            0.05             0.9               0.9
 heat capacity (K/kg/K): 840
 thermal conductivity (W/m/K) : 0,05
 emissivity: 0.9
 absorptivity: 0.9
 convective coefficient at the bottom  (w/m²): hbottom= 10kw/m2
 
+### Results for the optimased parameters
+
+0.4421	5795,0916789687	0,75	0,9	0,167728677728907	6537,9920207607	0,75	0,9	10,582566861517
+
+heat capacity (K/kg/K):
+5795.1 for virgin-wood (cpv), 6538.0 for char (cpc)
+thermal conductivity (W/m/K) :
+0.4421 for virgin-wood (kv), 0.1677 char (kc)
+convective coefficient at the top (w/m²) :
+10.58 for hTop
+
+------------------
 
