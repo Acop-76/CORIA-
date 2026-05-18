@@ -14,7 +14,7 @@
                 "Source": "UMET_Wood_TGA_N2_10K_R3"
             }
             "Model": "PATO",
-            "Method": "NL2SOL",
+            "Method": "1D",
             "Scope": "Material parameters",
             "Data": {
                 "Type": "Cone",
@@ -39,8 +39,8 @@
     "Kinetics": {
         "Reactants": [ [1], [2], [3]],
         "Products": [ [2], [2], [2] ],
-        "Pre-exponential": [3.195E+08,8.389E+07,7.765E+00],
-        "Activation Energy": [9.222E+04,1.004E+05,2.768E+04],
+        "Pre-exponential": [5.3243e6,1.3981E6,1.2942E-1],
+        "Activation Energy": [9.3268E+04,1.004E+05,2.768E+04],
         "Reaction Order": [1, 1, 1],
         "Solid Yield": [0.281, 0.001, 0.164]
     },
@@ -48,7 +48,7 @@
     "Thermodynamics": {
         "Heat Capacity": {
             "Equation": "virgin constant, char constant",
-            "Values": [???, ???] 
+            "Values": [2250, 1250] 
         },
         "Heat of Pyrolysis": {
             "Form": "Reaction Specific", 
@@ -70,19 +70,19 @@
     
     "Transport": {
         "Conductivity": {
-            "Equation": "constant, 
-            "Form": "",
+            "Equation": "virgin constant,char constant", 
+            "value": [0.35, 0.08],
            
         },
         "Absorption": {
-            "Equation": "constant, 
-            "Form": "Single Value",
-            "Value": ???
+            "Equation": "virgin constant, char constant",
+            "Form": "",
+            "Value": [0.9, 0.9]
         },
         "Emissivity": {
-            "Equation": "constant, 
-            "Form": "Single Value",
-            "Value": ???
+            "Equation": "virgin constant, char constant",
+            "Form": "",
+            "Value": [0.75, 0.75]
         }
     }
 

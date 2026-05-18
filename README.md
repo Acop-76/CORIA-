@@ -43,22 +43,26 @@ with m the total mass of the solid, and m0 the initial value
 
 The fitness function F is calculated by the following sommation over time (0-1500s)
 
-		F=   S [(m/m0)cal - (m/m0)exp]2
+		F=   Somme [(m/m0)cal - (m/m0)exp]2
 
-### Results
-E1=9,227E+04	A1= 3,195E+08	n1= 0,281
-E2= 1,004E+05	A2= 8,389E+07	n2= 0,001
-E3= 2,768E+04	A3= 7,765E+00	n3=0,164
+### Results E (J/mole), A (1/s), n (-)
+E1=9.3268E+04	A1= 5.3243e6	n1= 0.281
+E2= 1.004E+05	A2= 1.3981E6	n2= 0.001
+E3= 2.768E+04	A3= 1.2942E-1	n3=0.164
 
 ------------------ material properties of pine wood
 
-with experimental dataset ‘TIFP+UCT_Wood_Gasification_30kW_hor_parallel_R1’
+-with experimental dataset ‘TIFP+UCT_Wood_Gasification_30kW_hor_parallel_R1’
 
-Simulation of the degradation and pyrolysis under N2: PATOx
+-Simulation of the degradation and pyrolysis under N2: PATOx
 (J. Lachaud et al: A generic local thermal equilibrium model for porous reactive materials
 submitted to high temperatures, International Journal of Heat and Mass Transfer 108 (2017) 1406–1417)
 
+- radiation exhnage at the top
+- gradient(T)=0 at the bottom
+- no convection at the top and bottom
 
+<<<<<<< HEAD
 
 see attached picture: 1Dcalculation-geometrie.png
 
@@ -96,6 +100,28 @@ thermal conductivity (W/m/K) : 0,05
 emissivity: 0.9
 absorptivity: 0.9
 convective coefficient at the bottom  (w/m²): hbottom= 10kw/m2
+=======
+-kinetic mechanism of wood decomposition
+The one obtained by the above optimsation on ATG dataset.
+- Dry wood
+-Three reactions in parallel , corresponding of the three pseudo-components hemicellulose, cellulose and lignin.
+
+parameters : assumed to be constant, extracted from litterature
+(mainly: DINH Duy Cuong, PhD, ENSMA (France), 2024)
+heat capacity (J/kg/K):
+   virgin-wood: 2250.
+   char:        1250. 
+thermal conductivity (W/m/K) :
+   virgin-wood: 0.35
+   char :       0.08
+emissivity :
+   virgine wood: 0.75
+    char:    0.75
+absorptivity :
+   virgin wood: 0.9
+   char:     0.9
+
+>>>>>>> 21d8cfd (repository 18-5-2026)
 
 ### Results for the optimased parameters
 
